@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Mukta:wght@300&display=swap');
+*,*::after,*::before{
+  font-family: Mukta;
+}
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+div{
+  margin: 0;
+  padding: 0;
+  width: 97px;
+  height: 134px;
+  background-image: url(./sprite.png);
+  background-size: cover;
+  background-position: 0px;
+  animation: .7s walking steps(1) infinite reverse;
+}
+@keyframes walking {
+  0%{
+    background-position: 0px;
+  }
+  20%{
+    background-position: 96px;
+  }
+  40%{
+    background-position: 190px;
+  }
+  60%{
+    background-position: 285px;
+  }
+  80%{
+    background-position: 374px;
+  }
+  100%{
+    background-position: 472px;
+  }
+}
